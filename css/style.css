@@ -1,14 +1,8 @@
-.body   {
-    background-image:url('http://www.example.com/yourfile.gif');
-    background-position: center;
-    background-size: cover;
-        }
-    
+
 
 .hero-section {
-    background: url("https://wallpapercave.com/w/wp2856269");
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -23,6 +17,42 @@
             justify-content: center;
 }  
 
+.animated-search-form[type=search] {
+    width: 15rem;
+    border: 0.125rem solid #e6e6e6;
+    box-shadow: 0 0 3.125rem rgba(214, 248, 18, 0.18);
+    border-radius: 0;
+    background-image: url("https://image.ibb.co/i7NbrQ/search_icon_15.png");
+    background-position: 0.625rem 0.625rem;
+    background-repeat: no-repeat;
+    padding: 0.75rem 1.25rem 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: width 0.4s ease-in-out border-radius 0.5rem;;
+  }
+#submit{
+    margin-top: 20px;
+    padding: .7rem;
+    background-color: aqua;
+    border-radius: .5rem;
+}
+#submit:hover {
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(255,255,0,0.5);
+   
+}
+  
+
+#topline{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+#topline:hover{
+    color: yellow;
+    text-shadow: yellow 2rem;
+    font-size: 50.1px;
+}
+h3:hover{
+    color: yellow;
+}
 .hero-section .hero-section-text {
     color: #fefefe;
     text-shadow: 1px 1px 2px #0a0a0a;
@@ -52,3 +82,8 @@
         -ms-flex-pack: center;
             justify-content: center;
 }  
+
+.callout-hover-reveal .callout-footer {
+    display: none;
+  }
+  
