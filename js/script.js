@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $("#searchBtn").on("click", function (event) {
     event.preventDefault();
 
@@ -20,7 +19,6 @@ $("#searchBtn").on("click", function (event) {
         console.log(response);
     })
 })
-=======
 // added this code for the result function in HTML (Merdad)
 $(function () {
     $('[data-callout-hover-reveal]').hover(function () {
@@ -39,4 +37,3 @@ function record() {
     recognition.start();
 }
     // end of voice recognition(Merdad)
->>>>>>> 3d29a483166888389ecf3e514ba2e2a43fd95ce7
