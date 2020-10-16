@@ -7,20 +7,20 @@ $(function () {
     });
 })
 // added this function for converting voice to text(Merdad)
-function record() {
-    var recognition = new webkitSpeechRecognition();
-    recognition.lang = "en-GB";
-    recognition.onresult = function (event) {
-        document.getElementById('speechToText').value = event.results[0][0].transcript;
-    }
-    recognition.start();
-}
+// function record() {
+//     var recognition = new webkitSpeechRecognition();
+//     recognition.lang = "en-GB";
+//     recognition.onresult = function (event) {
+//         document.getElementById('speechToText').value = event.results[0][0].transcript;
+//     }
+//     recognition.start();
+// }
 // end of voice recognition(Merdad)
 
-$("#searchBtn").on("click", function (event) {
+$("#submit").on("click", function (event) {
     event.preventDefault();
 
-    var name = $("#nameInput").val();
+    var name = $("#speechToText").val();
     var queryUrl = "https://api.agify.io?name=" + name;
     var queryUrl2 = "https://api.nationalize.io?name=" + name;
 
@@ -38,3 +38,11 @@ $("#searchBtn").on("click", function (event) {
         console.log(response);
     })
 })
+
+// JQuery show.hide a form on click
+
+$(document).ready(function() {
+    $("#submit").click(function() {
+      $(".hero-section-text").toggle();
+    });
+  });
