@@ -68,7 +68,7 @@ h3:hover{
     font-size: 0.8rem;
 }
 .hero-section {
-    background: url("./Images/wp2856269-hd-gif-wallpapers.gif") 50% no-repeat;
+    background: orange;
     background-size: cover;
     height: 100vh;
     text-align: center;
