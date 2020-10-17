@@ -46,3 +46,21 @@ $(document).ready(function() {
       $(".hero-section-text").toggle();
     });
   });
+
+//   display results function
+function TestsFunction() {
+    var T = document.getElementById("TestsDiv"),
+        displayValue = "";
+    if (T.style.display === "")
+        displayValue = "none";
+
+    T.style.display = displayValue;
+}
+
+var heroSectionEL = document.getElementById(".hero-section");
+
+for (var i = 0; i < data.length; i++) {
+var div = document.createElement("div");
+div.innerHTML = "Name: " + data[i].firstName + " " + data[i].lastName;
+heroSectionEL.appendChild(div);
+}

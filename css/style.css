@@ -87,3 +87,6 @@ h3:hover{
     display: none;
   }
   
+  ​.toShow {
+      display:none;
+  }

@@ -16,22 +16,29 @@
     <!-- Create header section -->
     <!-- Create text area 
         1) Pre-put "Type first name here"
-         2) Takes user's name and runs the two api's  -->
+        2) Takes user's name and runs the two api's  -->
     <div class="hero-section">
         <div class="hero-section-text">
             <h1 id="topline">Submit yourself to the matrix</h1>
             <!-- Note: This code was produced by Imran Khan @DevHoot (Merdad)-->
             <label for="Speech Recognition"></label>
             <h3>Click and say your name below in the search area</h3>
-            <input type="search" id="speechToText" placeholder="Click here and say you name" onclick="record()"
+            <input type="search" id="speechToText" placeholder="Click here and say you name"
                 class="animated-search-form">
 
             <br>
-            <a href="results.html">
-                <input type="button" name="submitbutton" id="submit" value="Click here to submit !"></a>
+            <!-- <a href="results.html"> -->
+                <button onclick="TestsFunction()">Tests</button>
+                <div class="TestsDiv" style="display:none">
+                    Test results hre!
+                </div>
+                
             <!-- this id 'submit' has been created for css and also evenlistener Jqueri/JS please don't rename or change it. (Merdad) -->
         </div>
-
+            
+        <div class="results"> 
+            This is the results
+        </div>
     </div>
     <!-- all JS and Css files have been added to this HTML (Merdad) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
