@@ -37,12 +37,11 @@ $("#submit").on("click", function (event) {
     }).then(function (response) {
         console.log(response);
     })
-})
 
-// JQuery show.hide a form on click
+});
 
-$(document).ready(function() {
-    $("#submit").click(function() {
-      $(".hero-section-text").toggle();
+$(document).ready(function () {
+    $("#submit").click(function () {
+        $(".hero-section-text").toggle("results");
     });
-  });
+});
