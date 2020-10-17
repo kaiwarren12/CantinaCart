@@ -62,8 +62,8 @@ $("#submit").on("click", function (event) {
 
 // JQuery show.hide a form on click
 
-$(document).ready(function() {
-    $("#submit").click(function() {
-      $(".hero-section-text").toggle();
+$(document).ready(function () {
+    $("#submit").click(function () {
+        $(".hero-section-text").toggle();
     });
-  });
+});
