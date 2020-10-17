@@ -37,12 +37,17 @@ $("#submit").on("click", function (event) {
     }).then(function (response) {
         console.log(response);
     })
-})
+ 
+});
 
-// JQuery show.hide a form on click
-
+<<<<<<< HEAD
 $(document).ready(function () {
     $("#submit").click(function () {
         $(".hero-section-text").toggle();
+=======
+$(document).ready(function() {
+    $("#submit").click(function() {
+      $(".hero-section-text").toggle("results");
+>>>>>>> cb16cecbb28f10362ceeef76ef5bf0f38d52c874
     });
 });
